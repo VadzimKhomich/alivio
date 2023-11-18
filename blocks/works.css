@@ -1,0 +1,154 @@
+.works {
+    margin-top: 174px;
+    margin-bottom: 51px;
+}
+
+.works__info-title {
+    color: #424242;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 157%;
+}
+
+.works__info-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    max-width: 584px;
+    color: #01996D;
+    font-family: 'Georgia', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 157%;
+}
+
+.text {
+    max-width: 671px;
+}
+
+.works__info {
+    color: #424242;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.works__steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 390px);
+    column-gap: 95px;
+
+}
+
+.works__steps-title {
+    position: relative;
+    padding-top: 135px;
+    padding-left: 88px;
+    padding-right: 121px;
+    margin-top: 52px;
+    color: #000;
+    font-family: 'Georgia', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 55px;
+}
+
+.works__steps-text {
+    color: #424242;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 60px;
+}
+
+.works__step-img-wrapper {
+    background-color: antiquewhite;
+    padding-top: 126%;
+    position: relative;
+    border-radius: 8px;
+}
+
+
+.works__steps-img {
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.works__steps-title::before {
+    content: attr(data-number);
+    color: rgba(1, 153, 109, 0.20);
+    font-family: 'Georgia', sans-serif;
+    font-size: 150px;
+    font-weight: 400;
+    line-height: 150%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.title-second {
+    padding-left: 77px;
+    padding-right: 0px;
+    margin-top: 339px;
+}
+
+.title-third {
+    padding-left: 124px;
+    padding-right: 163px;
+    margin-top: 106px;
+}
+
+@media (max-width:1400px) {
+    .works__info-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .works__info-content-text {
+        margin-top: 20px;
+    }
+
+    .title {
+        line-height: 1.2;
+        font-size: 30px;
+        max-width: 671px;
+    }
+
+    .works__info-title {
+        margin-bottom: 20px;
+    }
+
+    .works {
+        margin-top: 60px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+}
+
+
+@media (max-width:1389px) {
+    .title-third {
+        margin-top: 0px;
+    }
+    .title-second {
+        margin-top: 0px
+    }
+}
+@media (max-width:422px) {
+    .works__steps {  
+        grid-template-columns:  290px;
+    }
+}
